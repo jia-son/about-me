@@ -1,9 +1,12 @@
 import React from "react";
+import './leftComponents.css';
 
 const LeftConponents = () => {
     return (
         <>
-        <h1>test</h1>
+        <div className="leftBox">
+            <h2>test</h2>
+        </div>
         </>
     );
 }

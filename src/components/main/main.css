@@ -1,8 +1,10 @@
-.mainBox {
-  height: 100vh;
-  background-color: beige;
-  margin: 0 auto;
-  text-align: center;
+@media screen and (min-width: 1025px) {
+  .mainBox {
+    width: 1166px;
+    height: 100vh;
+    background-color: beige;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -10,7 +12,6 @@
     height: 100vh;
     background-color: cadetblue;
     margin: 0 auto;
-    text-align: center;
   }
 }
 
@@ -19,6 +20,5 @@
     height: 100vh;
     background-color: aquamarine;
     margin: 0 auto;
-    text-align: center;
   }
 }

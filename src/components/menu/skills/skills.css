@@ -1,3 +1,23 @@
+@keyframes fadeInText {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+@keyframes slideInText {
+    0% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
 .skillsBox {
     padding: 100px 70px 0px 70px;
     text-align: left;
@@ -10,4 +30,14 @@
 .skillsRight {
     padding-left: 300px;
     flex: 1;
-  }
+}
+
+.skillsFirstText {
+    animation: slideInText 1.5s cubic-bezier(0.42, 0, 0.58, 1);
+    animation-delay: 0.5s;
+}
+
+.skillsSecondText {
+    animation: fadeInText 2s ease-in-out;
+    animation-delay: 0.5s;
+}

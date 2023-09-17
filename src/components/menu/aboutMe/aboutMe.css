@@ -1,4 +1,18 @@
+@keyframes fadeInText {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
 .aboutMeBox {
     padding: 100px 70px 0px 70px;
     text-align: left;
+}
+
+.aboutMeText {
+    animation: fadeInText 2s ease-in-out; /* 2초 동안 서서히 나타나도록 설정 */
+    animation-delay: 0.5s; /* 0.5초 뒤에 애니메이션 시작 */
 }

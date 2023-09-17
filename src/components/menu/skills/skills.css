@@ -40,63 +40,122 @@
   }
 }
 
-.skillsBox {
-  padding: 100px 70px 0px 70px;
-  text-align: left;
+/*PC 환경*/
+@media screen and (min-width: 1025px) {
+  .skillsBox {
+    padding: 100px 70px 0px 70px;
+    text-align: left;
+  }
+  
+  .skillsBoxInBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .skillsLeft {
+    flex: 1;
+    padding-right: 10px;
+  }
+  
+  .skillsRight {
+    flex: 1;
+    padding-left: 10px;
+  }
+  
+  .skillsFirstText {
+    animation: downSlideInText 1.5s cubic-bezier(0.42, 0, 0.58, 1);
+    animation-delay: 0.5s;
+  }
+  
+  .skillsSecondText {
+    animation: fadeInText 2s ease-in-out;
+    animation-delay: 0.5s;
+    padding-bottom: 25px;
+  }
+  
+  .skillsLeftCard,
+  .skillsRightCard {
+    background-color: #ffffff;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+  }
+  
+  .skillsLeftCard h4,
+  .skillsRightCard h4 {
+    margin: 10px 0 0 0;
+  }
+  
+  .skillsLeftCard {
+    animation: rightSlideInText 1.5s cubic-bezier(0.42, 0, 0.58, 1);
+    animation-delay: 0.5s;
+  }
+  
+  .skillsRightCard {
+    animation: leftSlideInText 1.5s cubic-bezier(0.42, 0, 0.58, 1);
+    animation-delay: 0.5s;
+  }
+  
+  #textWithShadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* 그림자 효과 설정 */
+  }
 }
 
-.skillsBoxInBox {
-  display: flex;
-  justify-content: space-between;
-}
 
-.skillsLeft {
-  flex: 1;
-  padding-right: 10px;
-}
+/*태블릿 환경*/
+@media screen and (max-width: 1024px) {
+  .skillsBox {
+    padding: 100px 70px 0px 70px;
+    text-align: left;
+  }
 
-.skillsRight {
-  flex: 1;
-  padding-left: 10px;
-}
+  .skillsLeft,
+  .skillsRight {
+    flex: none;
+    width: 100%;
+    padding: 0;
+  }
 
-.skillsFirstText {
-  animation: downSlideInText 1.5s cubic-bezier(0.42, 0, 0.58, 1);
-  animation-delay: 0.5s;
-}
+  .skillsRight {
+    margin-top: 20px;
+  }
+  
+  .skillsFirstText {
+    animation: downSlideInText 1.5s cubic-bezier(0.42, 0, 0.58, 1);
+    animation-delay: 0.5s;
+  }
+  
+  .skillsSecondText {
+    animation: fadeInText 2s ease-in-out;
+    animation-delay: 0.5s;
+    padding-bottom: 25px;
+  }
+  
+  .skillsLeftCard,
+  .skillsRightCard {
+    background-color: #ffffff;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
 
-.skillsSecondText {
-  animation: fadeInText 2s ease-in-out;
-  animation-delay: 0.5s;
-  padding-bottom: 25px;
-}
-
-.skillsLeftCard,
-.skillsRightCard {
-  background-color: #ffffff;
-  padding-left: 20px;
-  padding-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-}
-
-.skillsLeftCard h4,
-.skillsRightCard h4 {
-  margin: 10px 0 0 0;
-}
-
-.skillsLeftCard {
-  animation: rightSlideInText 1.5s cubic-bezier(0.42, 0, 0.58, 1);
-  animation-delay: 0.5s;
-}
-
-.skillsRightCard {
-  animation: leftSlideInText 1.5s cubic-bezier(0.42, 0, 0.58, 1);
-  animation-delay: 0.5s;
-}
-
-#textWithShadow {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* 그림자 효과 설정 */
+    animation: rightSlideInText 1.5s cubic-bezier(0.42, 0, 0.58, 1);
+    animation-delay: 0.5s;
+  }
+  
+  .skillsLeftCard h4,
+  .skillsRightCard h4 {
+    margin: 10px 0 0 0;
+  }
+  
+  #textWithShadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* 그림자 효과 설정 */
+  }
 }

@@ -19,3 +19,7 @@
     background-position: center; /* 이미지를 가운데 정렬 */
     margin: auto;
 }
+
+.menuBox > p {
+    padding-top: 15px;
+}

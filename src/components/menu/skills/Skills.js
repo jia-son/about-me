@@ -20,10 +20,16 @@ const Skills = () => {
             
             <div className="skillsBoxInBox">
                 <div className="skillsLeft">
-                    으하하....
+                    <div className="skillsLeftCard">
+                        <h4>Java</h4>
+                        <p>기본 문법과 어쩌구.. 저쩌구...</p>
+                    </div>
                 </div>
                 <div className="skillsRight">
-                    아 된다.
+                <div className="skillsRightCard">
+                        <h4>Java</h4>
+                        <p>이거 왜 딱 이분할 안 되냐 환장</p>
+                    </div>
                 </div>
             </div>
         </div>

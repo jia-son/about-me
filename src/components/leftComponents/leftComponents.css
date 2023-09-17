@@ -1,5 +1,21 @@
 .leftBox {
     width: 330px;
     height: 100vh;
-    background-color: rgb(96, 97, 97);
+    background-color: rgb(215, 215, 215);
+    text-align: center;
+}
+
+.leftBoxInImgBox {
+    padding-top: 50px;
+    padding-bottom: 15px;
+}
+
+.imgBox {
+    width: 200px;
+    height: 200px;
+    background-image: url(./img/my_face.jpg);
+    border-radius: 100px;
+    background-size: 150%;
+    background-position: center; /* 이미지를 가운데 정렬 */
+    margin: auto;
 }

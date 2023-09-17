@@ -1,0 +1,13 @@
+.skillsBox {
+    padding: 100px 70px 0px 70px;
+    text-align: left;
+}
+
+.skillsBoxInBox {
+    display: flex;
+}
+
+.skillsRight {
+    padding-left: 300px;
+    flex: 1;
+  }

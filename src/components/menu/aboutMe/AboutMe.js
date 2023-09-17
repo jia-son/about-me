@@ -7,7 +7,7 @@ const AboutMe = () => {
         <div className="aboutMeBox">
             <div className="aboutMeText">
                 <h1>안녕하세요.</h1>
-                <h1>미완성 개발자를 꿈꾸는 손지아입니다.</h1>
+                <h1>백엔드 개발자를 꿈꾸는 손지아입니다.</h1>
                 <hr />
 
                 <h3>"미완성 개발자를 목표로"</h3>

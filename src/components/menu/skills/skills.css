@@ -1,21 +1,21 @@
 @keyframes fadeInText {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes downSlideInText {
-    0% {
-      opacity: 0;
-      transform: translateY(-100%);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes rightSlideInText {
@@ -41,13 +41,13 @@
 }
 
 .skillsBox {
-    padding: 100px 70px 0px 70px;
-    text-align: left;
+  padding: 100px 70px 0px 70px;
+  text-align: left;
 }
 
 .skillsBoxInBox {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .skillsLeft {
@@ -61,40 +61,42 @@
 }
 
 .skillsFirstText {
-    animation: downSlideInText 1.5s cubic-bezier(0.42, 0, 0.58, 1);
-    animation-delay: 0.5s;
+  animation: downSlideInText 1.5s cubic-bezier(0.42, 0, 0.58, 1);
+  animation-delay: 0.5s;
 }
 
 .skillsSecondText {
-    animation: fadeInText 2s ease-in-out;
-    animation-delay: 0.5s;
-    padding-bottom: 25px;
+  animation: fadeInText 2s ease-in-out;
+  animation-delay: 0.5s;
+  padding-bottom: 25px;
 }
 
-.skillsLeftCard {
+.skillsLeftCard,
+.skillsRightCard {
   background-color: #ffffff;
-  padding: 20px;
+  padding-left: 20px;
+  padding-top: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
+}
 
+.skillsLeftCard h4,
+.skillsRightCard h4 {
+  margin: 10px 0 0 0;
+}
+
+.skillsLeftCard {
   animation: rightSlideInText 1.5s cubic-bezier(0.42, 0, 0.58, 1);
   animation-delay: 0.5s;
 }
 
 .skillsRightCard {
-  background-color: #ffffff;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-
   animation: leftSlideInText 1.5s cubic-bezier(0.42, 0, 0.58, 1);
   animation-delay: 0.5s;
 }
 
-.skillsBoxInBox h4, p {
-  margin: 0;
+#textWithShadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* 그림자 효과 설정 */
 }

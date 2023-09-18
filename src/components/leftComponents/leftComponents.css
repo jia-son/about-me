@@ -13,7 +13,7 @@
 .imgBox {
     width: 200px;
     height: 200px;
-    background-image: url(./img/my_face.jpg);
+    background-image: url(../img/my_face.jpg);
     border-radius: 100px;
     background-size: 150%;
     background-position: center; /* 이미지를 가운데 정렬 */

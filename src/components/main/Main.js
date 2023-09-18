@@ -3,6 +3,7 @@ import './main.css';
 import LeftConponents from "../leftComponents/LeftConponents";
 import AboutMe from "../menu/aboutMe/AboutMe";
 import Skills from "../menu/skills/Skills";
+import Project from "../menu/project/Project";
 
 const Main = () => {
     const [isMobile, setIsMobile] = useState(window.innerWidth);
@@ -29,6 +30,7 @@ const Main = () => {
             <div className="right">
                 <AboutMe />
                 <Skills />
+                <Project />
             </div>
         </div>
         </>

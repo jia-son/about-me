@@ -35,7 +35,7 @@ const Skills = () => {
 
                     <div className="skillsLeftCard">
                         <h4 id="textWithShadow" style={{color: "#f53e62"}}>HTML5</h4>
-                        <p>HTML 페이지를 설계하고 데이터를 원하는 위치에 넣을 수 있습니다.</p>
+                        <p>HTML 기본 문법을 이해하고 있으며, 페이지를 설계하고 데이터를 원하는 위치에 넣을 수 있습니다.</p>
                     </div>
 
                     <div className="skillsLeftCard">
@@ -68,8 +68,8 @@ const Skills = () => {
 
                     <div className="skillsRightCard">
                         <h4 id="textWithShadow" style={{color: "#2d2d2d"}}>GitHub</h4>
-                        <p>원활한 팀 프로젝트를 위해 GitHub를 활용했습니다.
-                            GitHub를 더 다양하게 사용해볼 수 있도록 이슈를 통한 프로젝트 관리, 코드 리뷰 등을 자주 사용해보려 하고 있습니다.
+                        <p>프로젝트 관리를 위해 GitHub를 활용했습니다.
+                            현재는 이슈를 통한 프로젝트 관리, 코드 리뷰 등에 관심을 갖고 사용해보고 있습니다.
                         </p>
                     </div>
                 </div>

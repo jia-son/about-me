@@ -1,0 +1,26 @@
+.careerBox {
+    padding: 100px 70px 0px 70px;
+}
+
+.graph1 .bar1 {
+    height: 20px;
+    background: linear-gradient(to right, #fac227 0%, #fac227 12%, #faefd0 12%, #faefd0 100%);
+    border-radius: 10px;
+}
+
+.graph2 .bar2 {
+    height: 20px;
+    background: linear-gradient(to right,  #faefd0 0%, #faefd0 12%, #fac227 12%, #fac227 34%, #faefd0 34%, #faefd0 100%);
+    border-radius: 10px;
+}
+
+.graph3 .bar3 {
+    height: 20px;
+    background: linear-gradient(to right,  #faefd0 0%, #faefd0 34%, #fac227 34%, #fac227 100%);
+    border-radius: 10px;
+}
+
+.experience {
+    padding-top: 10px;
+    margin-bottom: 10px;
+}

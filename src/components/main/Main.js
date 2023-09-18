@@ -4,6 +4,7 @@ import LeftConponents from "../leftComponents/LeftConponents";
 import AboutMe from "../menu/aboutMe/AboutMe";
 import Skills from "../menu/skills/Skills";
 import Project from "../menu/project/Project";
+import Career from "../menu/career/Career";
 
 const Main = () => {
     const [isMobile, setIsMobile] = useState(window.innerWidth);
@@ -31,6 +32,7 @@ const Main = () => {
                 <AboutMe />
                 <Skills />
                 <Project />
+                <Career />
             </div>
         </div>
         </>

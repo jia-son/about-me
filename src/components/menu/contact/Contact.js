@@ -4,7 +4,9 @@ import './contact.css';
 const Contact = () => {
     return (
         <>
-        test
+        <div className="contactBox">
+            <h3>contact영역 test</h3>
+        </div>
         </>
     );
 }

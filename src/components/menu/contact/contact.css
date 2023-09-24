@@ -1,3 +1,11 @@
 .contactBox {
     padding: 100px 70px 0px 70px;
 }
+
+.contentBox {
+    padding-top: 10px;
+}
+#icon {
+    padding-top: 10px;
+    margin-right: 10px;
+}

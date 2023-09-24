@@ -1,25 +1,57 @@
-.leftBox {
-    width: 330px;
-    height: 100vh;
-    background-color: rgb(247, 240, 215);
-    text-align: center;
+/*PC 환경*/
+@media screen and (min-width: 1025px) {
+    .leftBox {
+        width: 330px;
+        height: 100vh;
+        background-color: rgb(247, 240, 215);
+        text-align: center;
+    }
+    
+    .leftBoxInImgBox {
+        padding-top: 80px;
+        padding-bottom: 25px;
+    }
+    
+    .imgBox {
+        width: 200px;
+        height: 200px;
+        background-image: url(../img/my_face.jpg);
+        border-radius: 100px;
+        background-size: 150%;
+        background-position: center; /* 이미지를 가운데 정렬 */
+        margin: auto;
+    }
+    
+    .menuBox > p {
+        padding-top: 15px;
+    }
 }
 
-.leftBoxInImgBox {
-    padding-top: 80px;
-    padding-bottom: 25px;
-}
-
-.imgBox {
-    width: 200px;
-    height: 200px;
-    background-image: url(../img/my_face.jpg);
-    border-radius: 100px;
-    background-size: 150%;
-    background-position: center; /* 이미지를 가운데 정렬 */
-    margin: auto;
-}
-
-.menuBox > p {
-    padding-top: 15px;
+/*태블릿 환경*/
+@media screen and (max-width: 1024px) {
+    .leftBox {
+        width: 270px;
+        height: 100vh;
+        background-color: rgb(247, 240, 215);
+        text-align: center;
+    }
+    
+    .leftBoxInImgBox {
+        padding-top: 80px;
+        padding-bottom: 25px;
+    }
+    
+    .imgBox {
+        width: 180px;
+        height: 180px;
+        background-image: url(../img/my_face.jpg);
+        border-radius: 100px;
+        background-size: 150%;
+        background-position: center;
+        margin: auto;
+    }
+    
+    .menuBox > p {
+        padding-top: 15px;
+    }
 }

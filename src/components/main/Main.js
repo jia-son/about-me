@@ -5,6 +5,7 @@ import AboutMe from "../menu/aboutMe/AboutMe";
 import Skills from "../menu/skills/Skills";
 import Project from "../menu/project/Project";
 import Career from "../menu/career/Career";
+import Contact from "../menu/contact/Contact";
 
 const Main = () => {
     const [isMobile, setIsMobile] = useState(window.innerWidth);
@@ -33,6 +34,7 @@ const Main = () => {
                 <Skills />
                 <Project />
                 <Career />
+                <Contact />
             </div>
         </div>
         </>

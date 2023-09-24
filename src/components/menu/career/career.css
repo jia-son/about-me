@@ -31,58 +31,120 @@
     }
 }
 
-.careerBox {
-    padding: 100px 70px 0px 70px;
-}
-
-.graphAndBar {
-    position: relative;
-    height: 20px;
-    background: linear-gradient(to right, #faefd0 0%, #faefd0 100%);
-    border-radius: 10px;
-}
-
-.graph1 .bar1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    border-radius: 10px;
-    animation: fillGraph1 5s cubic-bezier(0.01, 1, 0.165, 1) forwards;
-}
-
-.graph2 .bar2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    border-radius: 10px;
-    animation: fillGraph2 7s cubic-bezier(0.1, 1, 0.165, 1) forwards;
-}
-
-.graph3 .bar3 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    border-radius: 10px;
-    animation: fillGraph3 5s cubic-bezier(0.15, 1, 0.165, 1) forwards;
-}
-
-.experience {
-    padding-top: 20px;
-}
-
-.title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    > p:last-child {
-        padding-right: 5px;
+/*PC 환경*/
+@media screen and (min-width: 1025px) {
+    .careerBox {
+        padding: 100px 70px 0px 70px;
+    }
+    
+    .graphAndBar {
+        position: relative;
+        height: 20px;
+        background: linear-gradient(to right, #faefd0 0%, #faefd0 100%);
+        border-radius: 10px;
+    }
+    
+    .graph1 .bar1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        border-radius: 10px;
+        animation: fillGraph1 5s cubic-bezier(0.01, 1, 0.165, 1) forwards;
+    }
+    
+    .graph2 .bar2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        border-radius: 10px;
+        animation: fillGraph2 7s cubic-bezier(0.1, 1, 0.165, 1) forwards;
+    }
+    
+    .graph3 .bar3 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        border-radius: 10px;
+        animation: fillGraph3 5s cubic-bezier(0.15, 1, 0.165, 1) forwards;
+    }
+    
+    .experience {
+        padding-top: 20px;
+    }
+    
+    .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        > p:last-child {
+            padding-right: 5px;
+        }
+    }
+    
+    .careerSecondText {
+        padding-top: 20px;
     }
 }
 
-.careerSecondText {
-    padding-top: 20px;
+/*태블릿 환경*/
+@media screen and (max-width: 1024px) {
+    .careerBox {
+        padding: 100px 70px 0px 70px;
+    }
+    
+    .graphAndBar {
+        position: relative;
+        height: 20px;
+        background: linear-gradient(to right, #faefd0 0%, #faefd0 100%);
+        border-radius: 10px;
+    }
+    
+    .graph1 .bar1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        border-radius: 10px;
+        animation: fillGraph1 5s cubic-bezier(0.01, 1, 0.165, 1) forwards;
+    }
+    
+    .graph2 .bar2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        border-radius: 10px;
+        animation: fillGraph2 7s cubic-bezier(0.1, 1, 0.165, 1) forwards;
+    }
+    
+    .graph3 .bar3 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        border-radius: 10px;
+        animation: fillGraph3 5s cubic-bezier(0.15, 1, 0.165, 1) forwards;
+    }
+    
+    .experience {
+        padding-top: 20px;
+    }
+    
+    .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        > p:last-child {
+            padding-right: 5px;
+        }
+    }
+    
+    .careerSecondText {
+        padding-top: 20px;
+    }
 }

@@ -30,11 +30,11 @@ const Contact = () => {
         <div className="contactBox">
             <h3>contact</h3>
             <div className="contentBox">
-                <div className="email">
-                    <FiMail id="icon" />wldk963@gmail.com
-                </div>
                 <div className="phonNumber">
                     <FiPhoneCall id="icon" />010-7570-4099
+                </div>
+                <div className="email">
+                    <FiMail id="icon" />wldk963@gmail.com
                 </div>
             </div>
 
@@ -42,7 +42,7 @@ const Contact = () => {
                 <form ref={form} onSubmit={sendEmail}>
                     <label>
                         회신받으실 이메일
-                        <input type="email" name="userEmail" placeholder="ex)abcd@naver.com" required />
+                        <input type="email" name="userEmail" placeholder="ex) abcd@naver.com" required />
                     </label>
                     <label>
                         제목

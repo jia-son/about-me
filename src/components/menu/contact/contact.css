@@ -4,8 +4,28 @@
 
 .contentBox {
     padding-top: 10px;
+    margin-bottom: 30px;
 }
+
 #icon {
     padding-top: 10px;
     margin-right: 10px;
+}
+
+/*이메일 부분*/
+.emailFormBox form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.emailFormBox form input[type="email"],
+.emailFormBox form input[type="text"],
+.emailFormBox form textarea {
+    width: 100%;
+    padding: 10px;
+}
+
+.emailFormBox form button {
+    padding: 10px 20px;
+    cursor: pointer;
 }

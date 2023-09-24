@@ -29,7 +29,7 @@
   }
   
   .aboutMeText {
-    padding-top: 100px;
+    padding-top: 50px;
     animation: fadeInText 2s ease-in-out;
     animation-delay: 0.5s;
   }

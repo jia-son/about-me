@@ -7,13 +7,30 @@
   }
 }
 
-.aboutMeBox {
-  padding: 100px 70px 0px 70px;
-  text-align: left;
+/*PC 환경*/
+@media screen and (min-width: 1025px) {
+  .aboutMeBox {
+    padding: 100px 70px 0px 70px;
+    text-align: left;
+  }
+  
+  .aboutMeText {
+    padding-top: 100px;
+    animation: fadeInText 2s ease-in-out;
+    animation-delay: 0.5s;
+  }
 }
 
-.aboutMeText {
-  padding-top: 100px;
-  animation: fadeInText 2s ease-in-out;
-  animation-delay: 0.5s;
+/*태블릿 환경*/
+@media screen and (max-width: 1024px) {
+  .aboutMeBox {
+    padding: 100px 70px 0px 70px;
+    text-align: left;
+  }
+  
+  .aboutMeText {
+    padding-top: 100px;
+    animation: fadeInText 2s ease-in-out;
+    animation-delay: 0.5s;
+  }
 }

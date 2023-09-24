@@ -46,11 +46,11 @@ const Contact = () => {
                     </label>
                     <label>
                         제목
-                        <input type="text" name="emailTitle" placeholder="제목을 입력해주세요." required />
+                        <input type="text" name="emailTitle" placeholder="안녕하세요!" required />
                     </label>
                     <label>
                         내용
-                        <textarea name="emailContent" placeholder="내용을 입력해주세요." required />
+                        <textarea name="emailContent" placeholder="사이트에서 이메일 발송을 원하실 경우, 이곳을 활용해주세요." required />
                     </label>
                     <button type="submit" value="메일 발송">메일 발송</button>
                 </form>

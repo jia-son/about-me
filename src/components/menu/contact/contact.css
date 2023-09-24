@@ -13,9 +13,14 @@
 }
 
 /*이메일 부분*/
+.emailFormBox {
+    max-width: 450px; /* 원하는 최대 너비로 조절하세요. */
+}
+
 .emailFormBox form label {
     display: block;
     margin-bottom: 10px;
+    padding: 5px;
 }
 
 .emailFormBox form input[type="email"],
@@ -23,9 +28,22 @@
 .emailFormBox form textarea {
     width: 100%;
     padding: 10px;
+
+    background-color: rgb(248, 248, 248);
+    border: none;
+    border-bottom: 1px dashed #414141;
+    outline: none;
+}
+
+.emailFormBox form textarea {
+    height: 70px;
 }
 
 .emailFormBox form button {
-    padding: 10px 20px;
+    background-color: #f7eed7;
+    border: 1px dashed #b7b7b7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    padding: 7px 10px;
     cursor: pointer;
 }

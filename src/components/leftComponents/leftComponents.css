@@ -55,3 +55,50 @@
         padding-top: 15px;
     }
 }
+
+/*모바일 환경*/
+@media screen and (max-width: 768px) {
+    .leftBox {
+        width: 50vw;
+        height: 100vh;
+        background-color: rgb(247, 240, 215);
+        text-align: center;
+        position: relative;
+    }
+    
+    .leftBoxInImgBox {
+        padding-top: 60px;
+        padding-bottom: 25px;
+    }
+    
+    .imgBox {
+        width: 180px;
+        height: 180px;
+        background-image: url(../img/my_face.jpg);
+        border-radius: 100px;
+        background-size: 150%;
+        background-position: center;
+        margin: auto;
+    }
+    
+    .menuBox > p {
+        padding-top: 15px;
+    }
+
+    #menuIcon {
+        font-size: 2rem;
+        padding-top: 30px;
+
+        margin-right: 10px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    #menuRightIcon {
+        font-size: 2rem;
+        left : 0;
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+}

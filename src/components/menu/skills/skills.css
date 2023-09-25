@@ -170,3 +170,69 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   }
 }
+
+/*모바일 환경*/
+@media screen and (max-width: 768px) {
+  .skillsBox {
+    padding: 100px 70px 0px 70px;
+    text-align: left;
+  }
+  
+  .skillsBoxInBox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    align-items: stretch;
+  }
+  
+  .skillsLeft {
+    flex: 1;
+    padding-right: 10px;
+  }
+  
+  .skillsRight {
+    flex: 1;
+    padding-left: 10px;
+  }
+  
+  .skillsFirstText {
+    animation: downSlideInText 1.5s cubic-bezier(0.42, 0, 0.58, 1);
+    animation-delay: 0.5s;
+  }
+  
+  .skillsSecondText {
+    animation: fadeInText 2s ease-in-out;
+    animation-delay: 0.5s;
+    padding-bottom: 10px;
+  }
+  
+  .skillsLeftCard,
+  .skillsRightCard {
+    height: 190px;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .skillsLeftCard h4,
+  .skillsRightCard h4 {
+    margin: 10px 0 0 0;
+  }
+  
+  .skillsLeftCard {
+    animation: rightSlideInText 1.5s cubic-bezier(0.42, 0, 0.58, 1);
+    animation-delay: 0.5s;
+  }
+  
+  .skillsRightCard {
+    animation: leftSlideInText 1.5s cubic-bezier(0.42, 0, 0.58, 1);
+    animation-delay: 0.5s;
+  }
+  
+  #textWithShadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+}

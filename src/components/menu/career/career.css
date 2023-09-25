@@ -95,6 +95,10 @@
     .careerBox {
         padding: 100px 70px 0px 70px;
     }
+
+    .careerFirstText {
+        padding-top: 25px;
+    }
     
     .graphAndBar {
         position: relative;

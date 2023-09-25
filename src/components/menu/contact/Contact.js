@@ -28,7 +28,7 @@ const Contact = () => {
     return (
         <>
         <div className="contactBox">
-            <h3>contact</h3>
+            <h3>Contact</h3>
             <div className="contentBox">
                 <div className="phonNumber">
                     <FiPhoneCall id="icon" />010-7570-4099

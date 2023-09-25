@@ -161,3 +161,85 @@
         opacity: 1;
     }
 }
+
+/*모바일 환경*/
+@media screen and (max-width: 768px) {
+    .projectBox {
+        padding: 100px 70px 0px 70px;
+      }
+    
+    .projectImgBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 320px;
+        height: 250px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        background-color: whitesmoke;
+    }
+    
+    .projectImg {
+        max-width: 200px;
+        max-height: 100%;
+        margin-left: 60px;
+
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .image-container {
+        position: relative;
+        width: 320px;
+        height: 250px;
+        overflow: hidden;
+    }
+    
+    .image-container img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s ease;
+    }
+    
+    .overlayCard {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #bebebe;
+        color: #fff;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.2s ease;
+    
+        > p {
+            padding: 4px;
+            margin-left: 7px;
+        }
+    
+        > button {
+            padding: 5px;
+            margin-left: 10px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+    
+            > span {
+                margin-left: 3px;
+            }
+        }
+    }
+    
+    .image-container:hover img {
+        transform: scale(1.1);
+    }
+    
+    .image-container:hover .overlayCard {
+        opacity: 1;
+    }
+}

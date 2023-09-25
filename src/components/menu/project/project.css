@@ -13,14 +13,14 @@
         border: 1px solid #ccc;
         border-radius: 5px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
+        background-color: whitesmoke;
     }
     
     .projectImg {
-        max-width: 100%;
+        max-width: 200px;
         max-height: 100%;
-        width: auto;
-        height: auto;
+        margin-left: 60px;
+
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
@@ -95,14 +95,14 @@
         border: 1px solid #ccc;
         border-radius: 5px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
+        background-color: whitesmoke;
     }
     
     .projectImg {
-        max-width: 100%;
+        max-width: 200px;
         max-height: 100%;
-        width: auto;
-        height: auto;
+        margin-left: 60px;
+
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;

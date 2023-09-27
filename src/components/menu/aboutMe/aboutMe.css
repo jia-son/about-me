@@ -16,7 +16,8 @@
   
   .aboutMeText {
     padding-top: 100px;
-    animation: fadeInText 2s ease-in-out;
+    opacity: 0;
+    animation: fadeInText 2s ease-in-out forwards;
     animation-delay: 0.5s;
   }
 }
@@ -30,7 +31,8 @@
   
   .aboutMeText {
     padding-top: 50px;
-    animation: fadeInText 2s ease-in-out;
+    opacity: 0;
+    animation: fadeInText 2s ease-in-out forwards;
     animation-delay: 0.5s;
   }
 }
@@ -44,7 +46,8 @@
   
   .aboutMeText {
     padding-top: 0;
-    animation: fadeInText 2s ease-in-out;
+    opacity: 0;
+    animation: fadeInText 2s ease-in-out forwards;
     animation-delay: 0.5s;
   }
 }

@@ -1,4 +1,4 @@
-/* @keyframes fadeInText {
+@keyframes fadeInText {
   0% {
     opacity: 0;
   }
@@ -38,7 +38,7 @@
     opacity: 1;
     transform: translateX(0);
   }
-} */
+}
 
 /*PC 환경*/
 @media screen and (min-width: 1025px) {
@@ -64,14 +64,16 @@
     padding-left: 10px;
   }
   
-  /* .skillsFirstText {
-    animation: downSlideInText 1.5s cubic-bezier(0.42, 0, 0.58, 1);
+  .skillsFirstText {
+    opacity: 0;
+    animation: downSlideInText 1.5s cubic-bezier(0.42, 0, 0.58, 1) forwards;
     animation-delay: 0.5s;
-  } */
+  }
   
   .skillsSecondText {
-    /* animation: fadeInText 2s ease-in-out;
-    animation-delay: 0.5s; */
+    opacity: 0;
+    animation: fadeInText 2s ease-in-out forwards;
+    animation-delay: 0.5s;
     padding-bottom: 10px;
   }
   
@@ -90,15 +92,17 @@
     margin: 10px 0 0 0;
   }
   
-  /* .skillsLeftCard {
-    animation: rightSlideInText 1.5s cubic-bezier(0.42, 0, 0.58, 1);
+  .skillsLeftCard {
+    opacity: 0;
+    animation: rightSlideInText 2.5s cubic-bezier(0.42, 0, 0.58, 1) forwards;
     animation-delay: 0.5s;
-  } */
+  }
   
-  /* .skillsRightCard {
-    animation: leftSlideInText 1.5s cubic-bezier(0.42, 0, 0.58, 1);
+  .skillsRightCard {
+    opacity: 0;
+    animation: leftSlideInText 2.5s cubic-bezier(0.42, 0, 0.58, 1) forwards;
     animation-delay: 0.5s;
-  } */
+  }
   
   #textWithShadow {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -129,20 +133,21 @@
     padding-left: 10px;
   }
   
-  /* .skillsFirstText {
-    animation: downSlideInText 1.5s cubic-bezier(0.42, 0, 0.58, 1);
+  .skillsFirstText {
+    opacity: 0;
+    animation: downSlideInText 1.5s cubic-bezier(0.42, 0, 0.58, 1) forwards;
     animation-delay: 0.5s;
-  } */
+  }
   
   .skillsSecondText {
-    /* animation: fadeInText 2s ease-in-out;
-    animation-delay: 0.5s; */
+    opacity: 0;
+    animation: fadeInText 2s ease-in-out forwards;
+    animation-delay: 0.5s;
     padding-bottom: 10px;
   }
   
   .skillsLeftCard,
   .skillsRightCard {
-    /* height: 210px; */
     height: max-content;
     background-color: #ffffff;
     padding: 20px;
@@ -157,15 +162,17 @@
     margin: 10px 0 0 0;
   }
   
-  /* .skillsLeftCard {
-    animation: rightSlideInText 1.5s cubic-bezier(0.42, 0, 0.58, 1);
+  .skillsLeftCard {
+    opacity: 0;
+    animation: rightSlideInText 2.5s cubic-bezier(0.42, 0, 0.58, 1) forwards;
     animation-delay: 0.5s;
   }
   
   .skillsRightCard {
-    animation: leftSlideInText 1.5s cubic-bezier(0.42, 0, 0.58, 1);
+    opacity: 0;
+    animation: leftSlideInText 2.5s cubic-bezier(0.42, 0, 0.58, 1) forwards;
     animation-delay: 0.5s;
-  } */
+  }
   
   #textWithShadow {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -196,20 +203,21 @@
     padding-left: 10px;
   }
   
-  /* .skillsFirstText {
-    animation: downSlideInText 1.5s cubic-bezier(0.42, 0, 0.58, 1);
+  .skillsFirstText {
+    opacity: 0;
+    animation: downSlideInText 1.5s cubic-bezier(0.42, 0, 0.58, 1) forwards;
     animation-delay: 0.5s;
-  } */
+  }
   
   .skillsSecondText {
-    /* animation: fadeInText 2s ease-in-out;
-    animation-delay: 0.5s; */
+    opacity: 0;
+    animation: fadeInText 2s ease-in-out forwards;
+    animation-delay: 0.5s;
     padding-bottom: 10px;
   }
   
   .skillsLeftCard,
   .skillsRightCard {
-    /* height: 190px; */
     height: max-content;
     background-color: #ffffff;
     padding: 20px;
@@ -224,15 +232,17 @@
     margin: 10px 0 0 0;
   }
   
-  /* .skillsLeftCard {
-    animation: rightSlideInText 1.5s cubic-bezier(0.42, 0, 0.58, 1);
+  .skillsLeftCard {
+    opacity: 0;
+    animation: rightSlideInText 2.5s cubic-bezier(0.42, 0, 0.58, 1) forwards;
     animation-delay: 0.5s;
   }
   
   .skillsRightCard {
-    animation: leftSlideInText 1.5s cubic-bezier(0.42, 0, 0.58, 1);
+    opacity: 0;
+    animation: leftSlideInText 2.5s cubic-bezier(0.42, 0, 0.58, 1) forwards;
     animation-delay: 0.5s;
-  } */
+  }
   
   #textWithShadow {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);

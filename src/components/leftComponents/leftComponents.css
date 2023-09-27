@@ -27,6 +27,7 @@
     
     .menuBox > p {
         padding-top: 15px;
+        cursor: pointer;
     }
 }
 
@@ -59,6 +60,7 @@
     
     .menuBox > p {
         padding-top: 15px;
+        cursor: pointer;
     }
 }
 

@@ -1,4 +1,4 @@
-@keyframes fadeInText {
+/* @keyframes fadeInText {
   0% {
     opacity: 0;
   }
@@ -38,7 +38,7 @@
     opacity: 1;
     transform: translateX(0);
   }
-}
+} */
 
 /*PC 환경*/
 @media screen and (min-width: 1025px) {
@@ -64,14 +64,14 @@
     padding-left: 10px;
   }
   
-  .skillsFirstText {
+  /* .skillsFirstText {
     animation: downSlideInText 1.5s cubic-bezier(0.42, 0, 0.58, 1);
     animation-delay: 0.5s;
-  }
+  } */
   
   .skillsSecondText {
-    animation: fadeInText 2s ease-in-out;
-    animation-delay: 0.5s;
+    /* animation: fadeInText 2s ease-in-out;
+    animation-delay: 0.5s; */
     padding-bottom: 10px;
   }
   
@@ -90,15 +90,15 @@
     margin: 10px 0 0 0;
   }
   
-  .skillsLeftCard {
+  /* .skillsLeftCard {
     animation: rightSlideInText 1.5s cubic-bezier(0.42, 0, 0.58, 1);
     animation-delay: 0.5s;
-  }
+  } */
   
-  .skillsRightCard {
+  /* .skillsRightCard {
     animation: leftSlideInText 1.5s cubic-bezier(0.42, 0, 0.58, 1);
     animation-delay: 0.5s;
-  }
+  } */
   
   #textWithShadow {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -129,14 +129,14 @@
     padding-left: 10px;
   }
   
-  .skillsFirstText {
+  /* .skillsFirstText {
     animation: downSlideInText 1.5s cubic-bezier(0.42, 0, 0.58, 1);
     animation-delay: 0.5s;
-  }
+  } */
   
   .skillsSecondText {
-    animation: fadeInText 2s ease-in-out;
-    animation-delay: 0.5s;
+    /* animation: fadeInText 2s ease-in-out;
+    animation-delay: 0.5s; */
     padding-bottom: 10px;
   }
   
@@ -156,7 +156,7 @@
     margin: 10px 0 0 0;
   }
   
-  .skillsLeftCard {
+  /* .skillsLeftCard {
     animation: rightSlideInText 1.5s cubic-bezier(0.42, 0, 0.58, 1);
     animation-delay: 0.5s;
   }
@@ -164,7 +164,7 @@
   .skillsRightCard {
     animation: leftSlideInText 1.5s cubic-bezier(0.42, 0, 0.58, 1);
     animation-delay: 0.5s;
-  }
+  } */
   
   #textWithShadow {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -195,14 +195,14 @@
     padding-left: 10px;
   }
   
-  .skillsFirstText {
+  /* .skillsFirstText {
     animation: downSlideInText 1.5s cubic-bezier(0.42, 0, 0.58, 1);
     animation-delay: 0.5s;
-  }
+  } */
   
   .skillsSecondText {
-    animation: fadeInText 2s ease-in-out;
-    animation-delay: 0.5s;
+    /* animation: fadeInText 2s ease-in-out;
+    animation-delay: 0.5s; */
     padding-bottom: 10px;
   }
   
@@ -222,7 +222,7 @@
     margin: 10px 0 0 0;
   }
   
-  .skillsLeftCard {
+  /* .skillsLeftCard {
     animation: rightSlideInText 1.5s cubic-bezier(0.42, 0, 0.58, 1);
     animation-delay: 0.5s;
   }
@@ -230,7 +230,7 @@
   .skillsRightCard {
     animation: leftSlideInText 1.5s cubic-bezier(0.42, 0, 0.58, 1);
     animation-delay: 0.5s;
-  }
+  } */
   
   #textWithShadow {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);

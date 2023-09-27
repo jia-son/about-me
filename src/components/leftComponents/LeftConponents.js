@@ -15,6 +15,7 @@ const LeftConponents = ({ onMenuItemClick }) => {
         const handleResize = () => {
             setIsMobile(window.innerWidth);
         };
+
         window.addEventListener("resize", handleResize);
 
         return () => {
@@ -22,17 +23,22 @@ const LeftConponents = ({ onMenuItemClick }) => {
         };
     }, []);
 
+    const leftComponentStyle = {
+        position: "fixed",
+        top: "0",
+    };
+
     const handleItemClick = (pageName) => {
         onMenuItemClick(pageName);
     }
 
     if (!menu && isMobile <= 768) {
-        return <BiChevronsRight id="menuRightIcon" onClick={changeMenu} />;
+        return <BiChevronsRight id="menuRightIcon" style={leftComponentStyle} onClick={changeMenu} />;
     }
 
     return (
         <>
-        <div className="leftBox">
+        <div className="leftBox" style={leftComponentStyle}>
             {isMobile <= 768 ? 
                 (
                     <BiChevronsLeft id="menuIcon" onClick={changeMenu} />

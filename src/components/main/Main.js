@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import './main.css';
 import LeftConponents from "../leftComponents/LeftConponents";
 import AboutMe from "../menu/aboutMe/AboutMe";
@@ -12,20 +12,32 @@ const Main = () => {
     const [isMobile, setIsMobile] = useState(window.innerWidth);
     const [menu, setMenu] = useState(false);
     const [selectedMenuItem, setSelectedMenuItem] = useState("aboutMe");
+    const menuItems = ["aboutMe", "skills", "project", "career", "contact"];
+
+    const mainRef = useRef(null);
 
     const changeMenu = () => {
         const newMenu = !menu;
-        setMenu(newMenu)
+        setMenu(newMenu);
     }
 
     const handleMenuItemClick = (menuItem) => {
         setSelectedMenuItem(menuItem);
+
+        const componentIndex = menuItems.indexOf(menuItem);
+        if (mainRef.current && componentIndex !== -1) {
+            const element = mainRef.current.getElementsByClassName("menuContainer")[componentIndex];
+            if (element) {
+                element.scrollIntoView({ behavior: "smooth" });
+            }
+        }
     }
 
     useEffect(() => {
         const handleResize = () => {
             setIsMobile(window.innerWidth);
         };
+
         window.addEventListener("resize", handleResize);
 
         return () => {
@@ -33,10 +45,15 @@ const Main = () => {
         };
     }, []);
 
+    const leftStyle = {
+        top: 0,
+        zIndex: 1,
+        position: isMobile <= 768 && !menu ? "fixed" : "static",
+    };
+
     return (
-        <>
-        <div className="mainBox">
-            <div className="left">
+        <div className="mainBox" ref={mainRef}>
+            <div className="left" style={leftStyle}>
                 {isMobile <= 768 ? 
                 (
                     !menu ? <BiChevronsRight id="menuRightIcon" onClick={changeMenu} />
@@ -47,14 +64,20 @@ const Main = () => {
                 )}
             </div>
             <div className="right">
-                {selectedMenuItem === "aboutMe" && <AboutMe />}
-                {selectedMenuItem === "skills" && <Skills />}
-                {selectedMenuItem === "project" && <Project />}
-                {selectedMenuItem === "career" && <Career />}
-                {selectedMenuItem === "contact" && <Contact />}
+                {menuItems.map((menuItem) => (
+                    <div
+                        key={menuItem}
+                        className={`menuContainer ${selectedMenuItem === menuItem ? "active" : ""}`}
+                    >
+                        {menuItem === "aboutMe" && <AboutMe />}
+                        {menuItem === "skills" && <Skills />}
+                        {menuItem === "project" && <Project />}
+                        {menuItem === "career" && <Career />}
+                        {menuItem === "contact" && <Contact />}
+                    </div>
+                ))}
             </div>
         </div>
-        </>
     );
 }
 

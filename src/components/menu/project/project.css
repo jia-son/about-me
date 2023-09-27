@@ -1,9 +1,35 @@
+@keyframes fadeInText {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes downSlideInText {
+    0% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
 /*PC 환경*/
 @media screen and (min-width: 1025px) {
     .projectBox {
         padding: 100px 70px 0px 70px;
-      }
+    }
     
+    .projectFirstText {
+        opacity: 0;
+        animation: downSlideInText 1.5s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+        animation-delay: 0.5s;
+    }
+
     .projectImgBox {
         display: flex;
         justify-content: center;
@@ -14,6 +40,10 @@
         border-radius: 5px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         background-color: whitesmoke;
+
+        opacity: 0;
+        animation: fadeInText 2s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+        animation-delay: 0.5s;
     }
     
     .projectImg {
@@ -84,8 +114,14 @@
 @media screen and (max-width: 1024px) {
     .projectBox {
         padding: 100px 70px 0px 70px;
-      }
-    
+    }
+
+    .projectFirstText {
+        opacity: 0;
+        animation: downSlideInText 1.5s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+        animation-delay: 0.5s;
+    }
+
     .projectImgBox {
         display: flex;
         justify-content: center;
@@ -96,6 +132,10 @@
         border-radius: 5px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         background-color: whitesmoke;
+
+        opacity: 0;
+        animation: fadeInText 2s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+        animation-delay: 0.5s;
     }
     
     .projectImg {
@@ -166,7 +206,13 @@
 @media screen and (max-width: 768px) {
     .projectBox {
         padding: 100px 70px 0px 70px;
-      }
+    }
+    
+    .projectFirstText {
+        opacity: 0;
+        animation: downSlideInText 1.5s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+        animation-delay: 0.5s;
+    }
     
     .projectImgBox {
         display: flex;
@@ -178,6 +224,10 @@
         border-radius: 5px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         background-color: whitesmoke;
+
+        opacity: 0;
+        animation: fadeInText 2s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+        animation-delay: 0.5s;
     }
     
     .projectImg {

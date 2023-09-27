@@ -1,42 +1,45 @@
 @media screen and (min-width: 1025px) {
   .mainBox {
     width: 1200px;
-    height: 100vh;
+    height:max-content;
     background-color: rgb(248, 248, 248);
     margin: 0 auto;
     display: flex;
   }
 
-  .right {
-    overflow-y: auto;
+  .left {
+    flex: 1;
+    margin-right: 350px;
   }
 }
 
 @media screen and (max-width: 1024px) {
   .mainBox {
-    height: 100vh;
+    height:max-content;
     background-color: rgb(248, 248, 248);
     margin: 0 auto;
     display: flex;
   }
 
-  .right {
+  .left {
     flex: 1;
-    overflow-y: auto;
+    margin-right: 250px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .mainBox {
-    height: 100vh;
+  .mobile-menu-open {
+    height:max-content;
     background-color: rgb(248, 248, 248);
     margin: 0 auto;
   }
 
+  .left {
+    margin-right: 0;
+  }
+
   #menuRightIcon {
     font-size: 2rem;
-    left : 0;
-    margin-top: 30px;
-    margin-left: 10px;
+    position: relative;
   }
 }

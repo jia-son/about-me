@@ -1,33 +1,31 @@
-@keyframes fillGraph1 {
+@keyframes downSlideInText {
     0% {
-        opacity: 0;
-        background: linear-gradient(to right, #fac227 0%, #fac227 0%, #faefd0 12%, #faefd0 100%);
+      opacity: 0;
+      transform: translateY(-100%);
     }
     100% {
-        opacity: 1;
-        background: linear-gradient(to right, #fac227 0%, #fac227 12%, #faefd0 12%, #faefd0 100%);
+      opacity: 1;
+      transform: translateY(0);
     }
 }
 
-@keyframes fillGraph2 {
+@keyframes upSlideInText {
     0% {
-        opacity: 0;
-        background: linear-gradient(to right, #faefd0 0%, #faefd0 12%, #fac227 12%, #fac227 35%, #faefd0 35%, #faefd0 100%);
+      opacity: 0;
+      transform: translateY(50%);
     }
     100% {
-        opacity: 1;
-        background: linear-gradient(to right, #faefd0 0%, #faefd0 12%, #fac227 12%, #fac227 35%, #faefd0 35%, #faefd0 100%);
+      opacity: 1;
+      transform: translateY(0);
     }
 }
 
-@keyframes fillGraph3 {
+@keyframes fadeIn {
     0% {
         opacity: 0;
-        background: linear-gradient(to right,  #faefd0 0%, #faefd0 35%, #fac227 35%, #fac227 100%);
     }
     100% {
         opacity: 1;
-        background: linear-gradient(to right,  #faefd0 0%, #faefd0 35%, #fac227 35%, #fac227 100%);
     }
 }
 
@@ -35,6 +33,18 @@
 @media screen and (min-width: 1025px) {
     .careerBox {
         padding: 100px 70px 0px 70px;
+    }
+
+    .careerFirstText {
+        opacity: 0;
+        animation: downSlideInText 1.5s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+        animation-delay: 0.5s;
+    }
+
+    .careerContent {
+        opacity: 0;
+        animation: fadeIn 2s ease-in-out forwards;
+        animation-delay: 0.5s;
     }
     
     .graphAndBar {
@@ -50,7 +60,7 @@
         left: 0;
         bottom: 0;
         border-radius: 10px;
-        animation: fillGraph1 5s cubic-bezier(0.01, 1, 0.165, 1) forwards;
+        background: linear-gradient(to right, #fac227 0%, #fac227 12%, #faefd0 12%, #faefd0 100%);
     }
     
     .graph2 .bar2 {
@@ -59,7 +69,7 @@
         left: 0;
         bottom: 0;
         border-radius: 10px;
-        animation: fillGraph2 7s cubic-bezier(0.1, 1, 0.165, 1) forwards;
+        background: linear-gradient(to right, #faefd0 0%, #faefd0 12%, #fac227 12%, #fac227 35%, #faefd0 35%, #faefd0 100%);
     }
     
     .graph3 .bar3 {
@@ -68,7 +78,7 @@
         left: 0;
         bottom: 0;
         border-radius: 10px;
-        animation: fillGraph3 5s cubic-bezier(0.15, 1, 0.165, 1) forwards;
+        background: linear-gradient(to right,  #faefd0 0%, #faefd0 35%, #fac227 35%, #fac227 100%);
     }
     
     .experience {
@@ -87,6 +97,9 @@
     
     .careerSecondText {
         padding-top: 20px;
+        opacity: 0;
+        animation: upSlideInText 2.2s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+        animation-delay: 0.5s;
     }
 }
 
@@ -98,6 +111,15 @@
 
     .careerFirstText {
         padding-top: 25px;
+        opacity: 0;
+        animation: downSlideInText 1.5s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+        animation-delay: 0.5s;
+    }
+
+    .careerContent {
+        opacity: 0;
+        animation: fadeIn 2s ease-in-out forwards;
+        animation-delay: 0.5s;
     }
     
     .graphAndBar {
@@ -113,7 +135,8 @@
         left: 0;
         bottom: 0;
         border-radius: 10px;
-        animation: fillGraph1 5s cubic-bezier(0.01, 1, 0.165, 1) forwards;
+        background: linear-gradient(to right, #fac227 0%, #fac227 12%, #faefd0 12%, #faefd0 100%);
+        /* animation: fillGraph1 5s cubic-bezier(0.01, 1, 0.165, 1) forwards; */
     }
     
     .graph2 .bar2 {
@@ -122,7 +145,8 @@
         left: 0;
         bottom: 0;
         border-radius: 10px;
-        animation: fillGraph2 7s cubic-bezier(0.1, 1, 0.165, 1) forwards;
+        background: linear-gradient(to right, #faefd0 0%, #faefd0 12%, #fac227 12%, #fac227 35%, #faefd0 35%, #faefd0 100%);
+        /* animation: fillGraph2 7s cubic-bezier(0.1, 1, 0.165, 1) forwards; */
     }
     
     .graph3 .bar3 {
@@ -131,7 +155,8 @@
         left: 0;
         bottom: 0;
         border-radius: 10px;
-        animation: fillGraph3 5s cubic-bezier(0.15, 1, 0.165, 1) forwards;
+        background: linear-gradient(to right,  #faefd0 0%, #faefd0 35%, #fac227 35%, #fac227 100%);
+        /* animation: fillGraph3 5s cubic-bezier(0.15, 1, 0.165, 1) forwards; */
     }
     
     .experience {
@@ -150,6 +175,9 @@
     
     .careerSecondText {
         padding-top: 20px;
+        opacity: 0;
+        animation: upSlideInText 2.2s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+        animation-delay: 0.5s;
     }
 }
 
@@ -158,9 +186,16 @@
     .careerBox {
         padding: 100px 70px 0px 70px;
     }
-
+    
     .careerFirstText {
         padding-top: 25px;
+        animation: downSlideInText 1.5s cubic-bezier(0.42, 0, 0.58, 1);
+        animation-delay: 0.5s;
+    }
+
+    .careerContent {
+        animation: fadeIn 2s ease-in-out forwards;
+        animation-delay: 0.5s;
     }
     
     .graphAndBar {
@@ -176,7 +211,8 @@
         left: 0;
         bottom: 0;
         border-radius: 10px;
-        animation: fillGraph1 5s cubic-bezier(0.01, 1, 0.165, 1) forwards;
+        background: linear-gradient(to right, #fac227 0%, #fac227 12%, #faefd0 12%, #faefd0 100%);
+        /* animation: fillGraph1 5s cubic-bezier(0.01, 1, 0.165, 1) forwards; */
     }
     
     .graph2 .bar2 {
@@ -185,7 +221,8 @@
         left: 0;
         bottom: 0;
         border-radius: 10px;
-        animation: fillGraph2 7s cubic-bezier(0.1, 1, 0.165, 1) forwards;
+        background: linear-gradient(to right, #faefd0 0%, #faefd0 12%, #fac227 12%, #fac227 35%, #faefd0 35%, #faefd0 100%);
+        /* animation: fillGraph2 7s cubic-bezier(0.1, 1, 0.165, 1) forwards; */
     }
     
     .graph3 .bar3 {
@@ -194,7 +231,8 @@
         left: 0;
         bottom: 0;
         border-radius: 10px;
-        animation: fillGraph3 5s cubic-bezier(0.15, 1, 0.165, 1) forwards;
+        background: linear-gradient(to right,  #faefd0 0%, #faefd0 35%, #fac227 35%, #fac227 100%);
+        /* animation: fillGraph3 5s cubic-bezier(0.15, 1, 0.165, 1) forwards; */
     }
     
     .experience {
@@ -213,5 +251,7 @@
     
     .careerSecondText {
         padding-top: 20px;
+        animation: upSlideInText 2.2s cubic-bezier(0.42, 0, 0.58, 1);
+        animation-delay: 0.5s;
     }
 }

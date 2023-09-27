@@ -2,13 +2,13 @@ import React, { useEffect, useState } from "react";
 import './leftComponents.css';
 import { BiChevronsLeft, BiChevronsRight } from "react-icons/bi";
 
-const LeftConponents = () => {
+const LeftConponents = ({ onMenuItemClick }) => {
     const [isMobile, setIsMobile] = useState(window.innerWidth);
     const [menu, setMenu] = useState(true);
 
     const changeMenu = () => {
         const newMenu = !menu;
-        setMenu(newMenu)
+        setMenu(newMenu);
     }
 
     useEffect(() => {
@@ -22,6 +22,10 @@ const LeftConponents = () => {
         };
     }, []);
 
+    const handleItemClick = (pageName) => {
+        onMenuItemClick(pageName);
+    }
+
     if (!menu && isMobile <= 768) {
         return <BiChevronsRight id="menuRightIcon" onClick={changeMenu} />;
     }
@@ -29,11 +33,10 @@ const LeftConponents = () => {
     return (
         <>
         <div className="leftBox">
-            {
-            isMobile <= 768 ? 
-            (
-                <BiChevronsLeft id="menuIcon" onClick={changeMenu} />
-            ) : null
+            {isMobile <= 768 ? 
+                (
+                    <BiChevronsLeft id="menuIcon" onClick={changeMenu} />
+                ) : null
             }
             <div className="leftBoxInImgBox">
                 <div className="imgBox" />
@@ -41,11 +44,11 @@ const LeftConponents = () => {
                 <h5>Java 백엔드 개발자</h5>
             </div>
             <div className="menuBox">
-                <p>자기소개</p>
-                <p>기술 스택</p>
-                <p>프로젝트</p>
-                <p>이력</p>
-                <p>컨택 가능 주소</p>
+                <p onClick={() => handleItemClick("aboutMe")}>자기소개</p>
+                <p onClick={() => handleItemClick("skills")}>기술 스택</p>
+                <p onClick={() => handleItemClick("project")}>프로젝트</p>
+                <p onClick={() => handleItemClick("career")}>이력</p>
+                <p onClick={() => handleItemClick("contact")}>컨택 가능 주소</p>
             </div>
         </div>
         </>

@@ -11,10 +11,15 @@ import { BiChevronsRight } from "react-icons/bi";
 const Main = () => {
     const [isMobile, setIsMobile] = useState(window.innerWidth);
     const [menu, setMenu] = useState(false);
+    const [selectedMenuItem, setSelectedMenuItem] = useState("aboutMe");
 
     const changeMenu = () => {
         const newMenu = !menu;
         setMenu(newMenu)
+    }
+
+    const handleMenuItemClick = (menuItem) => {
+        setSelectedMenuItem(menuItem);
     }
 
     useEffect(() => {
@@ -35,18 +40,18 @@ const Main = () => {
                 {isMobile <= 768 ? 
                 (
                     !menu ? <BiChevronsRight id="menuRightIcon" onClick={changeMenu} />
-                    : <LeftConponents />
+                    : <LeftConponents onMenuItemClick={handleMenuItemClick} />
                 )
                 : (
-                    <LeftConponents />
+                    <LeftConponents onMenuItemClick={handleMenuItemClick} />
                 )}
             </div>
             <div className="right">
-                <AboutMe />
-                <Skills />
-                <Project />
-                <Career />
-                <Contact />
+                {selectedMenuItem === "aboutMe" && <AboutMe />}
+                {selectedMenuItem === "skills" && <Skills />}
+                {selectedMenuItem === "project" && <Project />}
+                {selectedMenuItem === "career" && <Career />}
+                {selectedMenuItem === "contact" && <Contact />}
             </div>
         </div>
         </>

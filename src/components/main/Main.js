@@ -13,7 +13,7 @@ const Main = () => {
     const [menu, setMenu] = useState(false);
     const [selectedMenuItem, setSelectedMenuItem] = useState("aboutMe");
     const menuItems = ["aboutMe", "skills", "project", "career", "contact"];
-    
+
     const mainRef = useRef(null);
 
     const changeMenu = () => {
@@ -37,6 +37,7 @@ const Main = () => {
         const handleResize = () => {
             setIsMobile(window.innerWidth);
         };
+
         window.addEventListener("resize", handleResize);
 
         return () => {
@@ -44,9 +45,15 @@ const Main = () => {
         };
     }, []);
 
+    const leftStyle = {
+        top: 0,
+        zIndex: 1,
+        position: isMobile <= 768 && !menu ? "fixed" : "static",
+    };
+
     return (
         <div className="mainBox" ref={mainRef}>
-            <div className="left">
+            <div className="left" style={leftStyle}>
                 {isMobile <= 768 ? 
                 (
                     !menu ? <BiChevronsRight id="menuRightIcon" onClick={changeMenu} />

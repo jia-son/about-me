@@ -6,6 +6,11 @@
     margin: 0 auto;
     display: flex;
   }
+
+  .left {
+    flex: 1;
+    margin-right: 350px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -15,19 +20,26 @@
     margin: 0 auto;
     display: flex;
   }
+
+  .left {
+    flex: 1;
+    margin-right: 250px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-  .mainBox {
+  .mobile-menu-open {
     height:max-content;
     background-color: rgb(248, 248, 248);
     margin: 0 auto;
   }
 
+  .left {
+    margin-right: 0;
+  }
+
   #menuRightIcon {
     font-size: 2rem;
-    left : 0;
-    margin-top: 30px;
-    margin-left: 10px;
+    position: relative;
   }
 }

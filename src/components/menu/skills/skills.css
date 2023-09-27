@@ -142,7 +142,8 @@
   
   .skillsLeftCard,
   .skillsRightCard {
-    height: 210px;
+    /* height: 210px; */
+    height: max-content;
     background-color: #ffffff;
     padding: 20px;
     margin-bottom: 20px;
@@ -208,7 +209,8 @@
   
   .skillsLeftCard,
   .skillsRightCard {
-    height: 190px;
+    /* height: 190px; */
+    height: max-content;
     background-color: #ffffff;
     padding: 20px;
     margin-bottom: 20px;

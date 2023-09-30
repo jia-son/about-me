@@ -26,10 +26,12 @@ const LeftConponents = ({ onMenuItemClick }) => {
     const leftComponentStyle = {
         position: "fixed",
         top: "0",
+        zIndex: 1,
     };
 
     const handleItemClick = (pageName) => {
         onMenuItemClick(pageName);
+        changeMenu();
     }
 
     if (!menu && isMobile <= 768) {

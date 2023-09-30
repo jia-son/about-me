@@ -182,14 +182,14 @@
 }
 
 /*모바일 환경*/
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 375px) {
     .careerBox {
         padding: 100px 70px 0px 70px;
     }
     
     .careerFirstText {
         padding-top: 25px;
-        animation: downSlideInText 1.5s cubic-bezier(0.42, 0, 0.58, 1);
+        animation: downSlideInText 1.5s cubic-bezier(0.42, 0, 0.58, 1) forwards;
         animation-delay: 0.5s;
     }
 
@@ -237,8 +237,7 @@
     }
     
     .title {
-        display: flex;
-        justify-content: space-between;
+        display: contents;
         align-items: center;
     
         > p:last-child {
@@ -248,7 +247,7 @@
     
     .careerSecondText {
         padding-top: 20px;
-        animation: upSlideInText 2.2s cubic-bezier(0.42, 0, 0.58, 1);
+        animation: upSlideInText 2.2s cubic-bezier(0.42, 0, 0.58, 1) forwards;
         animation-delay: 0.5s;
     }
-} */
+}

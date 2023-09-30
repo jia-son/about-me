@@ -203,7 +203,7 @@
 }
 
 /*모바일 환경*/
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 375px) {
     .projectBox {
         padding: 100px 70px 0px 70px;
     }
@@ -218,8 +218,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 320px;
-        height: 250px;
+        width: 250px;
+        height: 300px;
         border: 1px solid #ccc;
         border-radius: 5px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -231,9 +231,10 @@
     }
     
     .projectImg {
-        max-width: 200px;
+        max-width: 180px;
         max-height: 100%;
-        margin-left: 60px;
+        margin-top: 15px;
+        margin-left: 36px;
 
         background-size: contain;
         background-repeat: no-repeat;
@@ -242,8 +243,8 @@
     
     .image-container {
         position: relative;
-        width: 320px;
-        height: 250px;
+        width: 250px;
+        height: 300px;
         overflow: hidden;
     }
     
@@ -267,8 +268,8 @@
         transition: opacity 0.2s ease;
     
         > p {
-            padding: 4px;
-            margin-left: 7px;
+            padding: 3px;
+            margin-left: 5px;
         }
     
         > button {
@@ -292,4 +293,4 @@
     .image-container:hover .overlayCard {
         opacity: 1;
     }
-} */
+}

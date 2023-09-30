@@ -65,13 +65,10 @@
 }
 
 /*모바일 환경*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 375px) {
     .leftBox {
-        /* width: 40vw; */
-        max-width: 768px;
-        min-width: 100px;
-        height: 100vh;
-        /* height: 100%; */
+        width: 360px;
+        height: 100%;
         background-color: rgb(247, 240, 215);
         text-align: center;
         position: relative;
@@ -94,7 +91,7 @@
     }
     
     .menuBox > p {
-        padding-top: 15px;
+        padding-top: 10px;
         cursor: pointer;
     }
 

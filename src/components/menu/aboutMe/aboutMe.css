@@ -38,7 +38,7 @@
 }
 
 /*모바일 환경*/
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 375px) {
   .aboutMeBox {
     padding: 100px 70px 0px 70px;
     text-align: left;
@@ -50,4 +50,4 @@
     animation: fadeInText 2s ease-in-out forwards;
     animation-delay: 0.5s;
   }
-} */
+}

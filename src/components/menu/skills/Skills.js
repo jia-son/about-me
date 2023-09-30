@@ -60,9 +60,9 @@ const Skills = () => {
                     </div>
 
                     <div className="skillsRightCard">
-                        <h4 id="textWithShadow" style={{color: "#f69e41"}}>AWS S3</h4>
-                        <p>사진 데이터를 다루기 위해 AWS S3를 사용한 경험이 있습니다.
-                            그 외에도 AWS EC2등을 공부하고 있습니다.
+                        <h4 id="textWithShadow" style={{color: "#f69e41"}}>AWS</h4>
+                        <p>AWS S3, CloudFront, EC2 등을 사용하여 배포를 진행한 경험이 있습니다.
+                            그 외의 다른 기능에 대해서도 공부하고 있습니다.
                         </p>
                     </div>
 

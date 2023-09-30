@@ -38,7 +38,7 @@
 }
 
 /*모바일 환경*/
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 767px) {
   .aboutMeBox {
     padding: 100px 70px 0px 70px;
     text-align: left;

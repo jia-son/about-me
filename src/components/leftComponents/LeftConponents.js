@@ -34,14 +34,14 @@ const LeftConponents = ({ onMenuItemClick }) => {
         changeMenu();
     }
 
-    if (!menu && isMobile <= 768) {
+    if (!menu && isMobile <= 767) {
         return <BiChevronsRight id="menuRightIcon" style={leftComponentStyle} onClick={changeMenu} />;
     }
 
     return (
         <>
         <div className="leftBox" style={leftComponentStyle}>
-            {isMobile <= 768 ? 
+            {isMobile <= 767 ? 
                 (
                     <BiChevronsLeft id="menuIcon" onClick={changeMenu} />
                 ) : null

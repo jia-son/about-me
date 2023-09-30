@@ -27,9 +27,10 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 767px) {
   .mainBox {
-    display:inline;
+    /* display:inline; */
+    display: block;
   }
 
   .mobile-menu-open {

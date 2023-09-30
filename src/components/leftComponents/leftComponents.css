@@ -65,9 +65,9 @@
 }
 
 /*모바일 환경*/
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 767px) {
     .leftBox {
-        width: 360px;
+        max-width: 700x;
         height: 100%;
         background-color: rgb(247, 240, 215);
         text-align: center;

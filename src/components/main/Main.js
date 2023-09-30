@@ -48,13 +48,13 @@ const Main = () => {
     const leftStyle = {
         top: 0,
         zIndex: 1,
-        position: isMobile <= 768 && !menu ? "fixed" : "static",
+        position: isMobile <= 767 && !menu ? "fixed" : "static",
     };
 
     return (
         <div className="mainBox" ref={mainRef}>
             <div className="left" style={leftStyle}>
-                {isMobile <= 768 ? 
+                {isMobile <= 767 ? 
                 (
                     !menu ? <BiChevronsRight id="menuRightIcon" onClick={changeMenu} />
                     : <LeftConponents onMenuItemClick={handleMenuItemClick} />

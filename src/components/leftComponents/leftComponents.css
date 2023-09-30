@@ -69,8 +69,8 @@
     .leftBox {
         /* width: 40vw; */
         max-width: 768px;
-        /* height: 100vh; */
-        height: 100%;
+        height: 100vh;
+        /* height: 100%; */
         background-color: rgb(247, 240, 215);
         text-align: center;
         position: relative;

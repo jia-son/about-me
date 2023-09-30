@@ -117,20 +117,13 @@
   }
   
   .skillsBoxInBox {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     align-items: stretch;
   }
   
-  .skillsLeft {
-    flex: 1;
-    padding-right: 10px;
-  }
-  
+  .skillsLeft,
   .skillsRight {
-    flex: 1;
-    padding-left: 10px;
+    padding-right: 10px;
   }
   
   .skillsFirstText {
@@ -162,15 +155,10 @@
     margin: 10px 0 0 0;
   }
   
-  .skillsLeftCard {
-    opacity: 0;
-    animation: rightSlideInText 2.5s cubic-bezier(0.42, 0, 0.58, 1) forwards;
-    animation-delay: 0.5s;
-  }
-  
+  .skillsLeftCard,
   .skillsRightCard {
     opacity: 0;
-    animation: leftSlideInText 2.5s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+    animation: rightSlideInText 2.5s cubic-bezier(0.42, 0, 0.58, 1) forwards;
     animation-delay: 0.5s;
   }
   
@@ -187,20 +175,13 @@
   }
   
   .skillsBoxInBox {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     align-items: stretch;
   }
   
-  .skillsLeft {
-    flex: 1;
-    padding-right: 10px;
-  }
-  
+  .skillsLeft,
   .skillsRight {
-    flex: 1;
-    padding-left: 10px;
+    padding-right: 10px;
   }
   
   .skillsFirstText {
@@ -232,15 +213,10 @@
     margin: 10px 0 0 0;
   }
   
-  .skillsLeftCard {
-    opacity: 0;
-    animation: rightSlideInText 2.5s cubic-bezier(0.42, 0, 0.58, 1) forwards;
-    animation-delay: 0.5s;
-  }
-  
+  .skillsLeftCard,
   .skillsRightCard {
     opacity: 0;
-    animation: leftSlideInText 2.5s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+    animation: rightSlideInText 2.5s cubic-bezier(0.42, 0, 0.58, 1) forwards;
     animation-delay: 0.5s;
   }
   

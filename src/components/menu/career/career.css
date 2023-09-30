@@ -182,7 +182,7 @@
 }
 
 /*모바일 환경*/
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .careerBox {
         padding: 100px 70px 0px 70px;
     }
@@ -212,7 +212,6 @@
         bottom: 0;
         border-radius: 10px;
         background: linear-gradient(to right, #fac227 0%, #fac227 12%, #faefd0 12%, #faefd0 100%);
-        /* animation: fillGraph1 5s cubic-bezier(0.01, 1, 0.165, 1) forwards; */
     }
     
     .graph2 .bar2 {
@@ -222,7 +221,6 @@
         bottom: 0;
         border-radius: 10px;
         background: linear-gradient(to right, #faefd0 0%, #faefd0 12%, #fac227 12%, #fac227 35%, #faefd0 35%, #faefd0 100%);
-        /* animation: fillGraph2 7s cubic-bezier(0.1, 1, 0.165, 1) forwards; */
     }
     
     .graph3 .bar3 {
@@ -232,7 +230,6 @@
         bottom: 0;
         border-radius: 10px;
         background: linear-gradient(to right,  #faefd0 0%, #faefd0 35%, #fac227 35%, #fac227 100%);
-        /* animation: fillGraph3 5s cubic-bezier(0.15, 1, 0.165, 1) forwards; */
     }
     
     .experience {
@@ -254,4 +251,4 @@
         animation: upSlideInText 2.2s cubic-bezier(0.42, 0, 0.58, 1);
         animation-delay: 0.5s;
     }
-}
+} */

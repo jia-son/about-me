@@ -19,7 +19,7 @@ const Project = () => {
                     <img className="projectImg" src={ttImage} alt="이미지" />
                     <div className="overlayCard">
                         <p>
-                            <strong>Tomorrow? Today!</strong>
+                            <strong>Today? Tomorrow!</strong>
                         </p>
                         <p>
                             개발 기간 : 2023.06 (1개월)
